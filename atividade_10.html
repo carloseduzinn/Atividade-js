@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade10</title>
+
+</head>
+<h1>Conversor</h1>
+    <p>Preco: <span id="preco"></span></p>
+    <p>impostos <span id="impostos"></span></p>
+    <p>distribuidor <span id="distribuidor"></span></p>
+    <p>total: <span id="total"></span></p>
+
+<body>
+    <script>
+    let preco = Number (prompt("Digite o preço do produto."));
+    let impostos = Number(prompt("Digite a porcentagem de impostos"));
+    let distribuidor = Number (prompt("Digite a porcentagem do distribuidor"));
+    let porcentagem = preco / 100 ; 
+    
+     total = (preco + (preco *(impostos + distribuidor) / 100));
+
+    document.getElementById("total").innerHTML=total;
+      document.getElementById("preco").innerHTML=preco;
+      document.getElementById("impostos").innerHTML=impostos;
+      document.getElementById("distribuidor").innerHTML=distribuidor;
+      document.getElementById("porcentagem").innerHTML=porcentagem;
+   
+    </script>
+</body>
+</html>

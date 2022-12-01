@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> atividade4</title>
+</head>
+<body>
+    <h1>Nota dos alunos</h1>
+    <p>Nome do aluno <span id="nome"></span></p>
+<p>Primeira nota: <span id="nota1"></span></p>
+<p>Segunda nota: <span id="nota2"></span></p>
+<p>Terceira nota: <span id="nota3"></span></p>
+<p>Disciplina: <span id="Disciplina"></span></p>
+<p>Turma: <span id="turma"></span></p>
+<p>Média: <span id="media"></span></p>
+
+    <script>
+        let nome = prompt ("Digite seu nome")
+        let nota1 =  Number (prompt ("Digite a primeira nota"))
+        let nota2= Number (prompt ("Digite a segunda nota"))
+        let nota3 = Number (prompt ("Digite a terceira nota"))
+        let Disciplina = prompt ("Digite o nome da disciplina")
+        let turma = prompt ("Digite o numero da turma")
+
+       let media = ((nota1+nota2+nota3) /3)
+
+    document.getElementById("nota1").innerHTML=nota1
+    document.getElementById("nota2").innerHTML=nota2
+    document.getElementById("nota3").innerHTML=nota3
+    document.getElementById("Disciplina").innerHTML=Disciplina
+    document.getElementById("turma").innerHTML=turma
+    document.getElementById("media").innerHTML=media
+    </script>
+
+
+</body>
+</html>

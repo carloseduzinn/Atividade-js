@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade9</title>
+</head>
+<body>
+    <h1>Conversor</h1>
+    <p>Cotação Euro: 5,49 <span id="euro"></span></p>
+    <p>Cotação Dólar: 5,31 <span id="dolar"></span></p>
+    <p>Conversor de Real para Dólar: US$ <span id="valor_dolar"></span></p>
+    <p>Conversor de Real para Euro: € <span id="valor_euro"></span></p>
+
+    <script>
+      let euro = Number (prompt("Digite o valor em Euro desejado."));
+      let dolar = Number(prompt("Digite o valor em Dólar desejado."));
+      let real = Number (1);
+      let valorDOdolar = Number ((dolar * 5.31));
+      let valorDOeuro = Number ((euro * 5.45));
+
+      document.getElementById("valorDOdolar").innerHTML=valorDOdolar;
+      document.getElementById("valorDOeuro").innerHTML=valorDOeuro;
+      
+    </script>
+
+</body>
+</html>
